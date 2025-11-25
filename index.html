@@ -10,7 +10,11 @@
     <!-- Application Structure Plan: 
          - Navigation: Sidebar with Overview, Car Rules, Report Guidelines, Sample Report, Physics Help, and Rubric.
          - Sample Report: A dedicated view showing the exemplar report structure. Equations formatted with HTML subscript/superscript.
-         - Rubric: Updated table matching the user's specific 125-point scale (Distance updated to 50).
+         - Rubric: Updated table matching the user's specific 135-point scale.
+           - Added In-Class Work Day 1 & 2 (10pts each).
+           - Removed "Working".
+           - Added "Construction" (0pts).
+           - Detailed instructions added to rubric cells.
          - Tools: Grade calculator updated to 50-point distance scale. Data visualizer remains for analysis.
     -->
     <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
@@ -121,21 +125,26 @@
             <!-- REPORT GUIDELINES PAGE -->
             <div id="page-report" class="page-content hidden prose max-w-none">
                 <h1 class="text-indigo-600">Report Requirements</h1>
-                <p>Your lab report must be formatted professionally (like the Sample Report) and include these sections:</p>
+                <p>Your lab report must be formatted professionally and include detailed answers to the following sections:</p>
 
-                <ol class="list-decimal pl-5">
-                    <li><strong>Title Page:</strong> Name, Partner, Date, Title.</li>
-                    <li><strong>Objective:</strong> Clear statement of goals.</li>
-                    <li><strong>Diagrams:</strong> Labeled drawings (Top & Side views) with measurements.</li>
+                <ol class="list-decimal pl-5 space-y-4">
+                    <li><strong>Title Page:</strong> Student Name, Partner Name, Date, Title.</li>
+                    <li><strong>Objective (3-5 sentences):</strong> 
+                        <br>What was the goal and objective of this project? Did you meet the requirements?</li>
+                    <li><strong>Procedure & Diagrams:</strong> 
+                        <br>What materials did you use? Include diagrams of your project with measurements (Top and Side view). Your diagram will need to match your car and include all of your measurements.</li>
                     <li><strong>Data Tables:</strong> 
-                        <ul class="list-disc pl-5">
-                            <li><strong>Table 1 (Raw):</strong> Time/Distance to Snap, Time/Distance to Stop.</li>
-                            <li><strong>Table 2 (Calculated):</strong> Acceleration (start), Velocity (snap), KE (snap), Acceleration (stop), Work.</li>
+                        <ul class="list-disc pl-5 mt-2">
+                            <li><strong>Table 1 (Raw):</strong> Time to Snap, Distance to Snap, Snap to Stop Time, Snap to Stop Distance.</li>
+                            <li><strong>Table 2 (Calculated):</strong> Acceleration to Snap, Velocity at Snap, Kinetic Energy at Snap, Acceleration to Stop, Work to Stop.</li>
                         </ul>
                     </li>
-                    <li><strong>Calculations:</strong> One sample calculation for EACH equation used.</li>
-                    <li><strong>Theory:</strong> Discuss physics concepts (Newton's Laws, Energy, Friction).</li>
-                    <li><strong>Results:</strong> Outcome, averages, and improvements.</li>
+                    <li><strong>Sample Calculations:</strong> 
+                        <br>For each different equation used, show one sample calculation (Equation used, Work with numbers, Answer).</li>
+                    <li><strong>Physics (1-2 Paragraphs):</strong> 
+                        <br>Discuss different concepts in physics (Newton's Laws, Energy, Friction) that go into making a mousetrap car be successful.</li>
+                    <li><strong>Results (5-7 sentences):</strong> 
+                        <br>What was the outcome of your project? What were the average values that you found for your car? If you were to modify your car, what would you change? Do you consider your car a success?</li>
                 </ol>
 
                 <hr class="my-8">
@@ -331,7 +340,7 @@
                     </div>
                 </div>
 
-                <h2>Detailed Rubric (125 Total Points)</h2>
+                <h2>Detailed Rubric (135 Total Points)</h2>
                 <div class="overflow-x-auto not-prose">
                     <table class="min-w-full divide-y divide-slate-300 border border-slate-300 bg-white">
                         <thead class="bg-slate-100">
@@ -348,20 +357,32 @@
                                 <td class="px-4 py-2 text-center font-bold border-r">0</td>
                                 <td class="px-4 py-2 text-sm">Report submitted by deadline. <span class="text-red-600">(-5 points per day late)</span></td>
                             </tr>
+                            <!-- In Class Work 1 -->
+                            <tr class="bg-green-50">
+                                <td class="px-4 py-2 font-medium border-r">In-Class Work (Day 1)</td>
+                                <td class="px-4 py-2 text-center font-bold text-green-700 border-r">10</td>
+                                <td class="px-4 py-2 text-sm">On-task, collaborative, used building time effectively, clean workspace.</td>
+                            </tr>
+                            <!-- In Class Work 2 -->
+                            <tr class="bg-green-50">
+                                <td class="px-4 py-2 font-medium border-r">In-Class Work (Day 2)</td>
+                                <td class="px-4 py-2 text-center font-bold text-green-700 border-r">10</td>
+                                <td class="px-4 py-2 text-sm">On-task, collaborative, used building time effectively, clean workspace.</td>
+                            </tr>
                             <!-- Distance -->
                             <tr class="bg-indigo-50">
-                                <td class="px-4 py-2 font-medium border-r">Distance</td>
+                                <td class="px-4 py-2 font-medium border-r">Distance Car Traveled</td>
                                 <td class="px-4 py-2 text-center font-bold text-indigo-700 border-r">50</td>
                                 <td class="px-4 py-2 text-sm">
                                     Car travels required distance (10m or 15m).<br>
-                                    <span class="text-xs text-slate-500">Scale: 50, 40, 30, 20, 10, 5 based on performance.</span>
+                                    <span class="text-xs text-slate-500">Grading Scale: 50, 40, 30, 20, 10 based on performance.</span>
                                 </td>
                             </tr>
-                            <!-- Working -->
+                            <!-- Construction (Pass/Fail) -->
                             <tr>
-                                <td class="px-4 py-2 font-medium border-r">Working</td>
-                                <td class="px-4 py-2 text-center font-bold border-r">10</td>
-                                <td class="px-4 py-2 text-sm">Car functions as intended during testing. (0 points if fails).</td>
+                                <td class="px-4 py-2 font-medium border-r">Construction</td>
+                                <td class="px-4 py-2 text-center font-bold border-r">0</td>
+                                <td class="px-4 py-2 text-sm">Checks for homemade materials, 3+ wheels, and mousetrap power. Required to test.</td>
                             </tr>
                             <!-- Title Page -->
                             <tr>
@@ -373,35 +394,34 @@
                             <tr>
                                 <td class="px-4 py-2 font-medium border-r">Objective</td>
                                 <td class="px-4 py-2 text-center font-bold border-r">3</td>
-                                <td class="px-4 py-2 text-sm">States clear objective.</td>
+                                <td class="px-4 py-2 text-sm">States a clear objective and goal.</td>
                             </tr>
                             <!-- Diagrams -->
                             <tr>
-                                <td class="px-4 py-2 font-medium border-r">Diagrams</td>
+                                <td class="px-4 py-2 font-medium border-r">Procedure & Diagrams</td>
                                 <td class="px-4 py-2 text-center font-bold border-r">10</td>
-                                <td class="px-4 py-2 text-sm">Top and Side views drawn and labeled with measurements.</td>
+                                <td class="px-4 py-2 text-sm">Drawn and labeled (Top/Side views) with specific measurements.</td>
                             </tr>
                             <!-- Math -->
                             <tr class="bg-indigo-50">
-                                <td class="px-4 py-2 font-medium border-r">Math Calcs</td>
+                                <td class="px-4 py-2 font-medium border-r">Mathematical Calculations</td>
                                 <td class="px-4 py-2 text-center font-bold text-indigo-700 border-r">25</td>
                                 <td class="px-4 py-2 text-sm">
-                                    - Formatted tables with correct units.<br>
-                                    - Sample calc shown for each equation.<br>
-                                    - Includes: Accel (start), Accel (stop), Velocity, KE, Work.
+                                    - Formatted Calculations with examples in appropriate data tables.<br>
+                                    - For Both Before/After Snap: Accel, Work, KE, Velocity at Snap.
                                 </td>
                             </tr>
                             <!-- Theory -->
                             <tr>
                                 <td class="px-4 py-2 font-medium border-r">Theory</td>
                                 <td class="px-4 py-2 text-center font-bold border-r">15</td>
-                                <td class="px-4 py-2 text-sm">Concepts (Newton's Laws, Energy) applied to car performance.</td>
+                                <td class="px-4 py-2 text-sm">Concepts covered throughout the year (Newton's Laws, Energy) applied to the car.</td>
                             </tr>
                             <!-- Results -->
                             <tr>
                                 <td class="px-4 py-2 font-medium border-r">Results</td>
                                 <td class="px-4 py-2 text-center font-bold border-r">10</td>
-                                <td class="px-4 py-2 text-sm">Summary of outcome, averages, and improvements.</td>
+                                <td class="px-4 py-2 text-sm">How did your car do? Restate results. What could you improve? (5-7 sentences).</td>
                             </tr>
                             <!-- Bonuses -->
                             <tr class="bg-yellow-50">
